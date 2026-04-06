@@ -65,13 +65,6 @@ O projeto é desenvolvido utilizando a metodologia ágil **Scrum**, com organiza
 - Assista às aulas e acompanhe os exemplos  
 - Pratique com os exercícios disponíveis  
 
-## 📦 Deploy (opcional)
-
-Você pode hospedar o projeto facilmente utilizando:
-
-- GitHub Pages  
-- Vercel  
-- Netlify  
 
 ## Desenvolvedores
 
