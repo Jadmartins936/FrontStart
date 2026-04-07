@@ -68,4 +68,25 @@ O projeto é desenvolvido utilizando a metodologia ágil **Scrum**, com organiza
 
 ## Desenvolvedores
 
-<img src="https://avatars.githubusercontent.com/u/171989995?v=4" width="115px;"><br><sub><b>Jad Martins</b></sub>
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://avatars.githubusercontent.com/u/171989995?v=4" width="115px;"><br>
+      <sub><b>Jad Martins</b></sub>
+    </td>
+
+    
+    
+  <td align="center">
+      <img src="https://avatars.githubusercontent.com/u/111109969?v=4" width="115px;"><br>
+      <sub><b>BoscoSC</b></sub>
+  </td>
+
+  <td align="center">
+      <img src="https://avatars.githubusercontent.com/u/231590660?v=4" width="115px;"><br>
+      <sub><b>luizsantos2006-design</b></sub>
+    </td>
+  </tr>
+</table>
+
+</div>
