@@ -1,14 +1,12 @@
 <h1 align="center">🚀 FrontStart</h1>
-<div align="center">
 
-</div>
 
 ## Descrição
 FrontStart é uma plataforma web educacional simples, inspirada em sites de ensino online, com foco no aprendizado de tecnologias front-end como HTML, CSS e JavaScript. O sistema organiza o conteúdo em módulos com teoria, exemplos práticos e exercícios, permitindo um aprendizado progressivo e intuitivo.
 
 <hr>
 <div align="center">
-  <img src="./assets/preview.png" width="800"/>
+  <img src="./assets/img-home.png" width="800"/>
 </div>
 
 ## 🚀 Funcionalidades
