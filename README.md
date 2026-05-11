@@ -40,13 +40,12 @@ O projeto é desenvolvido utilizando a metodologia ágil **Scrum**, com organiza
 /plataforma-front-end
 │
 ├── index.html
-├── login.html
-├── conteudos.html
+├── script.js
+├── style.css
 │
-├── /pages
-├── /css
-├── /js
 ├── /assets
+├── /apostilas
+├── /exercicios
 └── README.md
 
 ```
