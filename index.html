@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FrontStart — Aprenda Front-end do Zero</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── NAV ─── -->
+  <nav>
+    <a class="logo" href="#home">Front<span>Start</span></a>
+    <ul class="nav-links">
+      <li><a href="#modulos">Módulos</a></li>
+      <li><a href="#materiais">Materiais</a></li>
+      <li><a href="#aulas">Aulas</a></li>
+      <li><a href="#exercicios">Exercícios</a></li>
+    </ul>
+    <button class="nav-cta" onclick="openModal()">Entrar →</button>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section id="home" style="max-width:100%;padding-top:0;padding-bottom:0">
+    <div class="hero-glow a"></div>
+    <div class="hero-glow b"></div>
+    <div class="hero-inner">
+      <div class="hero-badge">Plataforma educacional open-source</div>
+      <h1>Aprenda <em>Front-end</em><br/>do zero</h1>
+      <p class="hero-sub">Módulos progressivos de HTML, CSS e JavaScript — com vídeos, PDFs didáticos, exemplos interativos e exercícios práticos.</p>
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="openModal()">Começar agora</button>
+        <button class="btn-outline" onclick="document.getElementById('modulos').scrollIntoView({behavior:'smooth'})">Ver módulos</button>
+      </div>
+      <div class="hero-tags">
+        <span class="tag ht">&lt;HTML5/&gt;</span>
+        <span class="tag cs">{CSS3}</span>
+        <span class="tag js">JS ES6+</span>
+        <span class="tag">Exercícios</span>
+        <span class="tag">PDFs</span>
+        <span class="tag">Vídeos</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── MÓDULOS ─── -->
+  <section id="modulos">
+    <p class="section-label">// módulos</p>
+    <h2 class="section-title">Trilha de aprendizado</h2>
+    <p class="section-desc">Conteúdo organizado de forma progressiva. Cada módulo inclui teoria, exemplos práticos e exercícios.</p>
+
+    <div class="module-tabs">
+      <button class="mod-tab active" onclick="switchTab(this,'html')">HTML</button>
+      <button class="mod-tab" onclick="switchTab(this,'css')">CSS</button>
+      <button class="mod-tab" onclick="switchTab(this,'js')">JavaScript</button>
+    </div>
+
+    <!-- HTML -->
+    <div class="module-panel active" id="panel-html">
+      <div class="lesson-card">
+        <div class="lesson-type video">▶ Vídeo PENDENTE</div>
+        <div class="lesson-title">PENDENTE</div>
+        <div class="lesson-desc">PENDENTE</div>
+        <div class="lesson-meta"><span>⏱ 14 min</span><span>📄 Aula 1</span></div>
+      </div>
+      <div class="lesson-card">
+        <div class="lesson-type pdf">📎 APOSTILA PENDENTE</div>
+        <div class="lesson-title">PENDENTE</div>
+        <div class="lesson-desc">PENDENTE</div>
+        <div class="lesson-meta"><span>📥 Download</span><span>12 págs</span></div>
+      </div>
+      <div class="lesson-card">
+        <div class="lesson-type video">▶ Vídeo Pendente</div>
+        <div class="lesson-title">PENDENTE</div>
+        <div class="lesson-desc">PENDENTE</div>
+        <div class="lesson-meta"><span>⏱ 18 min</span><span>📄 Aula 2</span></div>
+      </div>
+      <div class="lesson-card">
+        <div class="lesson-type exercicio">✏ Exercício</div>
+        <div class="lesson-title">Exercícios HTML</div>
+        <div class="lesson-desc">Pratique HTML desenvolvendo diversas páginas que abordam diferentes temas e conceitos (Desenvolvido por Jad M.)</div>
+        <br>
+        <a href="exercicios/Exercícios.pdf" download class="btn-download">
+          📥 Baixar PDF
+        </a>
+      </div>
+      </div>
+
+    <!-- CSS -->
+    <div class="module-panel" id="panel-css">
+      <div class="lesson-card" onclick="selectLesson(null,'Implementando CSS','4:00','JYlUc9odI-4')">
+        <div class="lesson-type video">▶ Vídeo</div>
+        <div class="lesson-title">Implementando CSS</div>
+        <div class="lesson-desc">Aprenda a implementar CSS inline, interno e externo</div>
+        <br>
+        <a 
+        href="https://www.youtube.com/watch?v=JYlUc9odI-4" 
+        target="_blank" 
+        class="btn-outline" 
+        style="font-size:.82rem;padding:.45rem 1rem;text-decoration:none;display:inline-block"
+        onclick="event.stopPropagation()">
+        Assistir no YouTube ↗
+      </a>
+        <div class="lesson-meta"><span>⏱ 4 min</span><span>📄 Aula 1</span></div>
+      </div>
+      <div class="lesson-card">
+        <div class="lesson-type pdf">📎 Apostila CSS</div>
+        <div class="lesson-title">Apostila CSS</div>
+        <div class="lesson-desc">Pdf completo sobre CSS (Desenvolvido por Jad M.)</div>
+        <div class="lesson-meta">       
+          <a href="apostilas/apostilaCSS.pdf" download class="btn-download">
+          📥 Baixar PDF
+          </a></div>
+      </div>
+      <div class="lesson-card">
+        <div class="lesson-type video">▶ Vídeo Pendente</div>
+        <div class="lesson-title">PENDENTE</div>
+        <div class="lesson-desc"> pendente</div>
+        <div class="lesson-meta"><span>⏱ 25 min</span><span>📄 Aula 2</span></div>
+      </div>
+      <div class="lesson-card">
+        <div class="lesson-type exercicio">✏ Exercício PENDENTE</div>
+        <div class="lesson-title">Pendente</div>
+        <div class="lesson-desc">Pendente</div>
+        <div class="lesson-meta"><span>🎯 Prátic</span><span>Nível: Médio</span></div>
+      </div>
+    </div>
+    
+
+    <!-- JavaScript -->
+    <div class="module-panel" id="panel-js">
+      <div class="lesson-card">
+        <div class="lesson-type video">▶ Vídeo PENDENTE</div>
+        <div class="lesson-title">Pendente</div>
+        <div class="lesson-desc">Pendente</div>
+        <div class="lesson-meta"><span>⏱ 22 min</span><span>📄 Aula 1</span></div>
+      </div>
+      <div class="lesson-card">
+        <div class="lesson-type pdf">📎 PDF PENDENTE</div>
+        <div class="lesson-title">Pendente</div>
+        <div class="lesson-desc">Pendente</div>
+        <div class="lesson-meta"><span>📥 Download</span><span>10 págs</span></div>
+      </div>
+      <div class="lesson-card">
+        <div class="lesson-type video">▶ Vídeo PENDENTE</div>
+        <div class="lesson-title">Pendente</div>
+        <div class="lesson-desc">Pendente</div>
+        <div class="lesson-meta"><span>⏱ 19 min</span><span>📄 Aula 2</span></div>
+      </div>
+      <div class="lesson-card">
+        <div class="lesson-type exercicio">✏ Exercício PENDENTE</div>
+        <div class="lesson-title">Pendente</div>
+        <div class="lesson-desc">Pendente</div>
+        <div class="lesson-meta"><span>🎯 Prático</span><span>Nível: Médio</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── MATERIAIS ─── -->
+  <section id="materiais" style="max-width:100%;background:var(--deep);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:5rem 2rem">
+    <div style="max-width:1100px;margin:0 auto">
+      <p class="section-label">// materiais didáticos</p>
+      <h2 class="section-title">Apostilas para download</h2>
+      <p class="section-desc">Apostilas em PDF disponíveis a qualquer hora para seus estudos sobre HTML, CSS e JavaScript.</p>
+
+      <!-- ─── Apostila CSS ─── -->
+        <a class="material-card" href="./apostilas/apostilaCSS.pdf" download>
+          <div class="mat-icon pdf-i">📄</div>
+          <div class="mat-info">
+            <h4>Apostila de CSS</h4>
+            <p>Aprenda a usar diferentes recursos do CSS, desde seletores até responsividade. (desenvolvido por Jad M.)</p>
+            <span class="mat-tag">PDF · 55 páginas · CSS</span>
+          </div>
+        </a>
+
+  <!-- ─── AULAS ─── -->
+    <section id="aulas">
+      <p class="section-label">// aulas em vídeo</p>
+      <h2 class="section-title">Assista as aulas</h2>
+      <p class="section-desc">Vídeos didáticos com exemplos práticos e código ao vivo.</p>
+
+      <div class="player-area">
+        <div class="player-video">
+          <iframe
+            id="videoPlayer"
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/JYlUc9odI-4"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+
+        <div class="player-info">
+          <div>
+            <div class="player-title">Introdução ao CSS - Implementando CSS</div>
+            <div class="player-meta">Módulo CSS · 4:20 · Nível iniciante</div>
+          </div>
+          <button class="btn-outline" style="font-size:.82rem;padding:.45rem 1rem" onclick="toast('Próxima aula!')">Próxima →</button>
+        </div>
+
+        <div class="playlist">
+          <div class="playlist-item active" onclick="selectLesson(this,'Introdução ao CSS - Implementando CSS','4:20','JYlUc9odI-4')">
+            <div class="pi-num">01</div>
+            <div class="pi-title">Introdução ao CSS - Implementando CSS</div>
+            <div class="pi-dur">4:20</div>
+          </div>
+          <div class="playlist-item" onclick="selectLesson(this,'Aula CSS','16:48','zoFcMBWSEMA')">
+            <div class="pi-num">02</div>
+            <div class="pi-title">Aula CSS</div>
+            <div class="pi-dur">16:48</div>
+          </div>
+          <div class="playlist-item" onclick="selectLesson(this,'Aula Javascript','25:00','ID_DO_VIDEO_AQUI')">
+            <div class="pi-num">03</div>
+            <div class="pi-title">Aula Javascript</div>
+            <div class="pi-dur">25:00</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- ─── EXERCÍCIOS ─── -->
+  <section id="exercicios">
+    <p class="section-label">// exercícios práticos</p>
+    <h2 class="section-title">Pratique o que aprendeu</h2>
+    <p class="section-desc">Desafios em PDF para baixar, resolver no seu ritmo e consultar a qualquer momento.</p>
+
+    <div class="exercise-list">
+
+      <div class="exercise-item">
+        <div class="ex-body">
+          <div class="ex-title">Exercícios HTML</div>
+          <div class="ex-desc">Use header, main, footer e tags semânticas para exercitar o que aprendeu. (Desenvolvido por Jad M.)
+          </div>
+        </div>
+        <a class="btn-download" href="exercicios/Exercícios.pdf" download>📥 Baixar PDF</a>
+      </div>
+
+      <div class="exercise-item">
+        <div class="ex-body">
+          <div class="ex-title">Exercícios CSS PENDENTE</div>
+          <div class="ex-desc">Pendente</div>
+        </div>
+        <a class="btn-download" href="" onclick="downloadEx(this,'ex-02-formulario.pdf');return false">📥 Baixar PDF</a>
+      </div>
+
+      <div class="exercise-item">
+        <div class="ex-body">
+          <div class="ex-title">Exercícios Javascript PENDENTE</div>
+          <div class="ex-desc">Pendente</div>
+        </div>
+        <a class="btn-download" href="" onclick="downloadEx(this,'ex-03-card-flexbox.pdf');return false">📥 Baixar PDF</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <p>© 2026 <strong>FrontStart</strong> — Plataforma educacional de front-end. Desenvolvida por: Jad M.</p>
+  </footer>
+
+  <!-- ─── LOGIN MODAL ─── -->
+  <div class="modal-overlay" id="loginModal" onclick="closeOnOverlay(event)">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div class="modal-logo">Front<span>Start</span></div>
+      <div class="modal-sub">Acesse a plataforma para começar a aprender</div>
+      <div class="form-group">
+        <label class="form-label">E-mail</label>
+        <input class="form-input" type="email" placeholder="seu@email.com" id="loginEmail" />
+      </div>
+      <div class="form-group">
+        <label class="form-label">Senha</label>
+        <input class="form-input" type="password" placeholder="••••••••" id="loginPass" />
+      </div>
+      <button class="form-submit" onclick="doLogin()">Entrar na plataforma →</button>
+      <div class="modal-hint">Não tem conta? <a href="#" onclick="toast('Cadastro em breve!');return false">Crie uma grátis</a></div>
+    </div>
+  </div>
+
+  <!-- ─── TOAST ─── -->
+  <div class="toast" id="toastEl"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
