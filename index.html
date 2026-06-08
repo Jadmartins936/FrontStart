@@ -61,13 +61,23 @@
     <!-- HTML -->
     <div class="module-panel active" id="panel-html">
       <div class="lesson-card">
-        <div class="lesson-type video">▶ Vídeo PENDENTE</div>
-        <div class="lesson-title">PENDENTE</div>
-        <div class="lesson-desc">PENDENTE</div>
-        <div class="lesson-meta"><span>⏱ 14 min</span><span>📄 Aula 1</span></div>
+        <div class="lesson-type video">▶ Vídeo</div>
+        <div class="lesson-title">Introdução ao HTML</div>
+        <div class="lesson-desc">Aprenda os fundamentos do HTML e como criar estruturas básicas de páginas web.</div>
+        <div class="lesson-meta">
+                <a 
+        href="https://www.youtube.com/watch?v=QFIBT8PLw4k" 
+        target="_blank" 
+        class="btn-outline" 
+        style="font-size:.82rem;padding:.45rem 1rem;text-decoration:none;display:inline-block"
+        onclick="event.stopPropagation()">
+        Assistir no YouTube ↗
+      </a>
+      
+      <span>⏱ 1 min</span><span>📄 Aula 1</span></div>
       </div>
       <div class="lesson-card">
-        <div class="lesson-type pdf">📎 Apostila CSS</div>
+        <div class="lesson-type pdf">📎 Apostila HTML</div>
         <div class="lesson-title">Apostila HTML</div>
         <div class="lesson-desc">Pdf completo sobre HTML (Desenvolvido por João Bosco)</div>
         <div class="lesson-meta">
@@ -145,10 +155,13 @@
         <div class="lesson-meta"><span>⏱ 22 min</span><span>📄 Aula 1</span></div>
       </div>
       <div class="lesson-card">
-        <div class="lesson-type pdf">📎 PDF PENDENTE</div>
-        <div class="lesson-title">Pendente</div>
-        <div class="lesson-desc">Pendente</div>
-        <div class="lesson-meta"><span>📥 Download</span><span>10 págs</span></div>
+        <div class="lesson-type pdf">📎 PDF Javascript</div>
+        <div class="lesson-title">Apostila de javascript</div>
+        <div class="lesson-desc">Aprenda javascript do zero!</div>
+        <div class="lesson-meta"> <br>
+        <a href="apostilas/apostilaJS.pdf" download class="btn-download">
+          📥 Baixar PDF
+        </a><span>31 págs</span></div>
       </div>
       <div class="lesson-card">
         <div class="lesson-type video">▶ Vídeo PENDENTE</div>
@@ -179,6 +192,31 @@
             <h4>Apostila de CSS</h4>
             <p>Aprenda a usar diferentes recursos do CSS, desde seletores até responsividade. (desenvolvido por Jad M.)</p>
             <span class="mat-tag">PDF · 55 páginas · CSS</span>
+          </div>
+        </a>
+
+        <br>
+
+        <a class="material-card" href="./apostilas/apostilaJS.pdf" download>
+          <div class="mat-icon pdf-i">📄</div>
+          <div class="mat-info">
+            <h4>Apostila de Javascript</h4>
+            <p>Aprenda javascript do zero! (desenvolvido por Jad M.)</p>
+            <span class="mat-tag">PDF · 31 páginas · Javascript</span>
+          </div>
+        </a>
+
+        <br>
+
+        <a class="material-card" href="./apostilas/apostilaHTML.pdf" download>
+          <div class="mat-icon pdf-i">📄</div>
+          <div class="mat-info">
+            <h4>Apostila de HTML</h4>
+            <p>Aprenda os fundamentos do HTML e crie suas primeiras páginas web. (desenvolvido por João B.)</p>
+            <span class="mat-tag">PDF · 23 páginas · HTML</span>
+          </div>
+        </a>
+
           </div>
         </a>
 
@@ -215,10 +253,10 @@
             <div class="pi-title">Introdução ao CSS - Implementando CSS</div>
             <div class="pi-dur">4:20</div>
           </div>
-          <div class="playlist-item" onclick="selectLesson(this,'Aula CSS','16:48','zoFcMBWSEMA')">
+          <div class="playlist-item" onclick="selectLesson(this,'Aula HTML','1:29','QFIBT8PLw4k')">
             <div class="pi-num">02</div>
-            <div class="pi-title">Aula CSS</div>
-            <div class="pi-dur">16:48</div>
+            <div class="pi-title">Aula HTML</div>
+            <div class="pi-dur">1:29</div>
           </div>
           <div class="playlist-item" onclick="selectLesson(this,'Aula Javascript','25:00','ID_DO_VIDEO_AQUI')">
             <div class="pi-num">03</div>
@@ -248,10 +286,10 @@
 
       <div class="exercise-item">
         <div class="ex-body">
-          <div class="ex-title">Exercícios CSS PENDENTE</div>
-          <div class="ex-desc">Pendente</div>
+          <div class="ex-title">Exercícios CSS</div>
+          <div class="ex-desc">Pratique suas habilidades em CSS com exercícios práticos. (Desenvolvido por João B.)</div>
         </div>
-        <a class="btn-download" href="" onclick="downloadEx(this,'ex-02-formulario.pdf');return false">📥 Baixar PDF</a>
+        <a class="btn-download" href="exercicios/Exercicios-CSS.pdf" download>📥 Baixar PDF</a>
       </div>
 
       <div class="exercise-item">
